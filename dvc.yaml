@@ -1,0 +1,21 @@
+stages:
+  download:
+    cmd: python src/data/download_data.py
+    deps:
+      - src/data/download_data.py
+    outs:
+      - data/raw/breast_cancer.csv
+  
+  preprocess:
+    cmd: python src/data/data_preprocessor.py
+    deps:
+      - src/data/data_preprocessor.py
+      - src/data/data_loader.py
+      - config/config.yaml
+      - data/raw/breast_cancer.csv
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+      - models/scaler.pkl
+    metrics:
+      - metrics.json 

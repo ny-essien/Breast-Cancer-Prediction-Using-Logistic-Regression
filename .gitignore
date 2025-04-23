@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data
+/data/**
+!data/**/*.dvc
+
+# Logs
+*.log
+logs/
+
+# MLflow
+mlruns/
+
+# DVC
+.dvc/
+.dvcignore
+
+# Environment variables
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# New additions
+__pycache__/
+*.pyc
+.env
+.venv/
+/models/**
+!models/**/*.dvc
+.pytest_cache/
+.coverage
+htmlcov/
+.dvc/cache
+/dvc_storage 
+/metrics.json
